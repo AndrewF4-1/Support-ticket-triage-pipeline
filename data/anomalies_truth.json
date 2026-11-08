@@ -1,0 +1,17 @@
+[
+ {
+  "pipeline": "orders_load",
+  "date": "2026-08-25",
+  "kind": "partial load"
+ },
+ {
+  "pipeline": "tickets_load",
+  "date": "2026-09-09",
+  "kind": "missing load"
+ },
+ {
+  "pipeline": "web_events",
+  "date": "2026-09-19",
+  "kind": "duplicate load"
+ }
+]

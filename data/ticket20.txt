@@ -1,0 +1,20 @@
+{"id": "T00001", "text": "Hi team, The courier says it was left but nothing is here. Thanks, Sam", "category":"shipping"}
+{"id": "T00002", "text": "Hi team, The courier says it was left but nothing is here. Thanks, Sam","category":"shipping"}
+{"id": "T00003", "text": "Hi team, The courier says it was left but nothing is here. Thanks, Sam","category":"shipping"}
+{"id": "T00004", "text": "Hi team, Tracking has not updated since Monday. Also my invoice shows a payment failed note. I will file a chargeback if this continues. Thanks, Alex", "category":"shipping"}
+{"id": "T00005", "text": "Hi team, Do you have a store in Melbourne? You can reach me on 0491 570 006 or riley74@example.com. Thanks, Riley", "category":"other" }
+{"id": "T00006", "text": "Hi team, The reset link never arrives. Also the courier left a delivery card with no tracking number. Thanks, Sam","category":"account_access"}
+{"id": "T00007", "text": "Hi team, Please explain how to start a return. You can reach me on 0491 570 156 or morgan90@example.com. Thanks, Morgan","category":"returns"}
+{"id": "T00008", "text": "Hi team, There is an overcharged amount on my statement. I will file a chargeback if this continues. Thanks, Dana","category":"billing"}
+{"id": "T00009", "text": "Hi team, The delivery has not shown up yet. I would like my money back. Thanks, Chris", "category":"shipping"}
+{"id": "T00010", "text": "Hi team, The delivery has not shown up yet. Thanks, Sam", "category":"shipping"}
+{"id": "T00011", "text": "Hi team, The blender stopped working after two days. You can reach me on 0491 570 158 or jamie86@example.com. Thanks, Jamie", "category":"product_fault"}
+{"id": "T00012", "text": "Hi team, What are your opening hours at Christmas? You can reach me on 0491 570 157 or alex17@example.com. Thanks, Alex", "category":"other" }
+{"id": "T00013", "text": "Hi team, Tracking has not updated since Monday. Also my password reset link and verification code failed. I would like my money back. Thanks, Riley", "category":"shipping"}
+{"id": "T00014", "text": "Hi team, The delivery has not shown up yet. I would like my money back. You can reach me on 0491 570 110 or jordan30@example.com. Thanks, Jordan", "category":"shipping"}
+{"id": "T00015", "text": "Hi team, What are your opening hours at Christmas? You can reach me on 0491 570 157 or alex17@example.com. Thanks, Alex", "category":"other" }
+{"id": "T00016", "text": "Hi team, The courier says it was left but nothing is here. Thanks, Jordan", "category":"shipping"}
+{"id": "T00017", "text": "Hi team, The blender stopped working after two days. I will file a chargeback if this continues. Thanks, Riley", "category":"product_fault"}
+{"id": "T00018", "text": "Hi team, Please explain how to start a return. Also my invoice shows a payment failed note. This is the second time I am writing. Please refund me. You can reach me on 0491 570 006 or dana73@example.com. Thanks, Dana","category":"returns"}
+{"id": "T00019", "text": "Hi team, There is an overcharged amount on my statement. Please refund me. Thanks, Jordan", "true_category":"billing"}
+{"id": "T00020", "text": "Hi team, It is defective out of the box. Also my password reset link and verification code failed. This is the second time I am writing. You can reach me on 0491 570 006 or casey96@example.com. Thanks, Casey", "category":"product_fault"}
