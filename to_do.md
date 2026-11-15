@@ -1,0 +1,1 @@
+1:36am - 15/11: note what learn this late into Gemini note - DONE
