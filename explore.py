@@ -13,29 +13,25 @@ def count_categoreie(tickets):
     return Counter(category)
 classified_tickets = count_categoreie(first_test)
 
-def order_dict(ticket):
+def order_dict(tickets):
 
-    by_length = sorted(ticket, key=lambda t: len(t['text']),reverse=True)  
+    by_length = sorted(tickets, key=lambda t: len(t['text']))  
+    
+    for longest_text in by_length[-5:]:
+         print(f'longest ticket: {longest_text}, {len(longest_text["text"])}')
+    print("\n\n\n\n")
+    for shortest_ticket in by_length[:5]:
+        print(f'shortest text: {shortest_ticket}, {len(shortest_ticket["text"])}')
+    return None
+    # return f'The longest tickets are:\n "{by_length[:5]},{len(by_length['text'])}\n\n The shortest tickets are:\n {by_length[-5:]}'
 
-    return f'The longest tickets are:\n "{by_length[:5]}\n\n The shortest tickets are:\n {by_length[-5:]}'
+print(order_dict(first_test))
 
-
-# def duplicate_tickers(tickets):
-#     texts = []
-#     for ticket in tickets:
-#         texts.append(ticket["text"])
-#     _newtext = Counter(texts)
-#     for text, duplicate in _newtext.items() :
-#         if duplicate >1:
-#             texts.append(text)
-#     return Counter(texts).most_common()        
-
-# print(duplicate_tickers(first_test))
-
-texts = []
-for ticket in first_test:
-    texts.append(ticket["text"])
-_newtext = Counter(texts)
-for text, duplicate in _newtext.most_common() :
-    if duplicate >1:
-        print(text,duplicate)
+def duplicate_tickers(tickets):
+    texts = []
+    for ticket in tickets:
+        texts.append(ticket["text"])
+    _newtext = Counter(texts)
+    for text, duplicate in _newtext.most_common() :
+        if duplicate >1:
+            print(text,duplicate)
