@@ -1,0 +1,152 @@
+[
+ {
+  "question": "How many days do I have to return an item?",
+  "doc": "returns_policy",
+  "hard": 0
+ },
+ {
+  "question": "Do I get a prepaid return label?",
+  "doc": "returns_policy",
+  "hard": 0
+ },
+ {
+  "question": "Can I return a sale item?",
+  "doc": "returns_policy",
+  "hard": 0
+ },
+ {
+  "question": "How long does express shipping take?",
+  "doc": "shipping_times",
+  "hard": 0
+ },
+ {
+  "question": "What is the cut off time for same day dispatch?",
+  "doc": "shipping_times",
+  "hard": 0
+ },
+ {
+  "question": "When do I get a tracking number?",
+  "doc": "shipping_times",
+  "hard": 0
+ },
+ {
+  "question": "How long until my refund is paid?",
+  "doc": "refund_timing",
+  "hard": 0
+ },
+ {
+  "question": "Do you refund the shipping fee?",
+  "doc": "refund_timing",
+  "hard": 0
+ },
+ {
+  "question": "How fast are refunds for cancelled orders?",
+  "doc": "refund_timing",
+  "hard": 0
+ },
+ {
+  "question": "How do I reset my password?",
+  "doc": "account_security",
+  "hard": 0
+ },
+ {
+  "question": "How many failed attempts before my account is locked?",
+  "doc": "account_security",
+  "hard": 0
+ },
+ {
+  "question": "Where do I get a verification code?",
+  "doc": "account_security",
+  "hard": 0
+ },
+ {
+  "question": "How long is the warranty on electrical products?",
+  "doc": "warranty",
+  "hard": 0
+ },
+ {
+  "question": "How do I make a warranty claim?",
+  "doc": "warranty",
+  "hard": 0
+ },
+ {
+  "question": "What remedy applies for faulty products?",
+  "doc": "warranty",
+  "hard": 0
+ },
+ {
+  "question": "How long do you keep support tickets?",
+  "doc": "privacy",
+  "hard": 0
+ },
+ {
+  "question": "Can I ask you to delete my account?",
+  "doc": "privacy",
+  "hard": 0
+ },
+ {
+  "question": "Do you sell my personal information?",
+  "doc": "privacy",
+  "hard": 0
+ },
+ {
+  "question": "Do gift cards expire?",
+  "doc": "gift_cards",
+  "hard": 0
+ },
+ {
+  "question": "Can I get cash back for a gift card?",
+  "doc": "gift_cards",
+  "hard": 0
+ },
+ {
+  "question": "How quickly is a gift card delivered?",
+  "doc": "gift_cards",
+  "hard": 0
+ },
+ {
+  "question": "What are the Sunday opening hours?",
+  "doc": "store_hours",
+  "hard": 0
+ },
+ {
+  "question": "Is the store open on Christmas Day?",
+  "doc": "store_hours",
+  "hard": 0
+ },
+ {
+  "question": "What do I need to bring for click and collect?",
+  "doc": "store_hours",
+  "hard": 0
+ },
+ {
+  "question": "Is there an extra fee if I want something quicker?",
+  "doc": "shipping_times",
+  "hard": 1
+ },
+ {
+  "question": "Someone I do not know got hold of my details, what happens?",
+  "doc": "privacy",
+  "hard": 1
+ },
+ {
+  "question": "I forgot how to get back into my profile",
+  "doc": "account_security",
+  "hard": 1
+ },
+ {
+  "question": "Can I swap it for something that fits better?",
+  "doc": "returns_policy",
+  "hard": 1
+ },
+ {
+  "question": "The gadget died within a few months, who fixes it?",
+  "doc": "warranty",
+  "hard": 1
+ },
+ {
+  "question": "Could I drop by on a Sunday afternoon?",
+  "doc": "store_hours",
+  "hard": 1
+ }
+]

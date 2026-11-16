@@ -1,0 +1,42 @@
+[
+ {
+  "id": "q1",
+  "question": "How many customers are in each state?",
+  "sql": "SELECT state, COUNT(*) FROM customers GROUP BY state"
+ },
+ {
+  "id": "q2",
+  "question": "What was total revenue from paid orders in September 2026?",
+  "sql": "SELECT ROUND(SUM(oi.qty * p.price), 2) FROM orders o JOIN order_items oi ON oi.order_id = o.order_id JOIN products p ON p.product_id = oi.product_id WHERE o.status = 'paid' AND o.order_date BETWEEN '2026-09-01' AND '2026-09-30'"
+ },
+ {
+  "id": "q3",
+  "question": "Which 5 products sold the most units in paid orders?",
+  "sql": "SELECT p.name, SUM(oi.qty) AS units FROM orders o JOIN order_items oi ON oi.order_id = o.order_id JOIN products p ON p.product_id = oi.product_id WHERE o.status = 'paid' GROUP BY p.name ORDER BY units DESC, p.name LIMIT 5"
+ },
+ {
+  "id": "q4",
+  "question": "How many orders were refunded?",
+  "sql": "SELECT COUNT(*) FROM orders WHERE status = 'refunded'"
+ },
+ {
+  "id": "q5",
+  "question": "Which customers placed more than 10 orders?",
+  "sql": "SELECT c.name, COUNT(*) AS n FROM customers c JOIN orders o ON o.customer_id = c.customer_id GROUP BY c.name HAVING COUNT(*) > 10"
+ },
+ {
+  "id": "q6",
+  "question": "What is the average value of a paid order?",
+  "sql": "SELECT ROUND(AVG(t), 2) FROM (SELECT SUM(oi.qty * p.price) AS t FROM orders o JOIN order_items oi ON oi.order_id = o.order_id JOIN products p ON p.product_id = oi.product_id WHERE o.status = 'paid' GROUP BY o.order_id)"
+ },
+ {
+  "id": "q7",
+  "question": "What is the paid revenue for each product category?",
+  "sql": "SELECT p.category, ROUND(SUM(oi.qty * p.price), 2) FROM orders o JOIN order_items oi ON oi.order_id = o.order_id JOIN products p ON p.product_id = oi.product_id WHERE o.status = 'paid' GROUP BY p.category"
+ },
+ {
+  "id": "q8",
+  "question": "Which customers have never placed an order?",
+  "sql": "SELECT c.name FROM customers c LEFT JOIN orders o ON o.customer_id = c.customer_id WHERE o.order_id IS NULL"
+ }
+]
