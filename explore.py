@@ -6,7 +6,7 @@ def load_jsonl_file(file_path):
         for line in f:
             ticket.append(json.loads(line.strip()))
     return ticket
-first_test = load_jsonl_file("C:/Users/nguye/OneDrive/projects/Project 1/data/tickets.jsonl")
+first_test = load_jsonl_file("C:/ticket-triage/data/tickets.jsonl")
 
 def count_categoreie(tickets):
     category = [tickets['true_category'] for tickets in tickets ]
@@ -25,7 +25,7 @@ def order_dict(tickets):
     return None
     # return f'The longest tickets are:\n "{by_length[:5]},{len(by_length['text'])}\n\n The shortest tickets are:\n {by_length[-5:]}'
 
-print(order_dict(first_test))
+order_dict(first_test)
 
 def duplicate_tickers(tickets):
     texts = []
@@ -35,3 +35,4 @@ def duplicate_tickers(tickets):
     for text, duplicate in _newtext.most_common() :
         if duplicate >1:
             print(text,duplicate)
+duplicate_tickers(first_test)
