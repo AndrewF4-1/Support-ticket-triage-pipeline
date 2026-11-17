@@ -1,0 +1,1 @@
+17/11 start: day 3, load tickets into SQLite.

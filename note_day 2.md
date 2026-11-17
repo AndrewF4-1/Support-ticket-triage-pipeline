@@ -34,8 +34,8 @@ It's a special kind of dictionary: key = the thing, value = how many times.
 - 600 tickets.
 - Categories: shipping 146, billing 131, returns 95,
   product_fault 86, account_access 72, other 70.
-- Shortest ticket: __ characters. Longest: __ characters.
-- __ messages were sent more than once. __ extra copies in total.
+- Shortest ticket: 44 characters. Longest: 233 characters.
+- 76 messages were sent more than once
 - Many tickets contain phone numbers and emails (personal data).
 
 

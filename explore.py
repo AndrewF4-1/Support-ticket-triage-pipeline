@@ -32,7 +32,7 @@ def duplicate_tickers(tickets):
     for ticket in tickets:
         texts.append(ticket["text"])
     _newtext = Counter(texts)
-    for text, duplicate in _newtext.most_common() :
+    for index,(text, duplicate) in enumerate(_newtext.most_common()) :
         if duplicate >1:
-            print(text,duplicate)
+            print(index,text,duplicate)
 duplicate_tickers(first_test)
