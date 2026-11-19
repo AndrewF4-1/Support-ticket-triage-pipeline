@@ -8,9 +8,10 @@ def load_jsonl_file(file_path):
             ticket.append(json.loads(line.strip()))
     return ticket
 
+
 con = sqlite3.connect("C:/ticket-triage/data/tickets.db")
 cur = con.cursor()
-cur.execute("CREATE TABLE IF NOT EXISTS tickets(id interger primary key, text varchar(150), true_category varchar(150), true_priority varchar (30), true_refund interger)")
+cur.execute("CREATE TABLE IF NOT EXISTS tickets(id text primary key, text varchar(150), true_category varchar(50), true_priority varchar (30), true_refund integer)")
 res = cur.execute('SELECT * FROM sqlite_master')
 for ticket in load_jsonl_file("C:/ticket-triage/data/tickets.jsonl"):
     cur.execute("""
@@ -23,3 +24,4 @@ con.commit()
 a = cur.execute("SELECT * FROM tickets").fetchall()
 b = cur.execute('SELECT COUNT(*) FROM tickets')
 print(b.fetchall())
+con.close()
