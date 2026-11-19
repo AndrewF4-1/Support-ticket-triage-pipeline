@@ -11,8 +11,7 @@ def load_jsonl_file(file_path):
 
 con = sqlite3.connect("C:/ticket-triage/data/tickets.db")
 cur = con.cursor()
-cur.execute("CREATE TABLE IF NOT EXISTS tickets(id text primary key, text varchar(150), true_category varchar(50), true_priority varchar (30), true_refund integer)")
-res = cur.execute('SELECT * FROM sqlite_master')
+cur.execute("CREATE TABLE IF NOT EXISTS tickets(id text primary key, text text, true_category text, true_priority text, true_refund integer)")
 for ticket in load_jsonl_file("C:/ticket-triage/data/tickets.jsonl"):
     cur.execute("""
     INSERT OR REPLACE INTO tickets
@@ -20,8 +19,11 @@ for ticket in load_jsonl_file("C:/ticket-triage/data/tickets.jsonl"):
     VALUES (?, ?, ?, ?, ?)
 """, (ticket["id"], ticket["text"], ticket["true_category"],
       ticket["true_priority"], int(ticket["true_refund"])))
-con.commit()
+
 a = cur.execute("SELECT * FROM tickets").fetchall()
-b = cur.execute('SELECT COUNT(*) FROM tickets')
+b = cur.execute('SELECT COUNT(*) FROM tickets GROUP BY true_category')
+con.commit()
+print(a)
 print(b.fetchall())
+
 con.close()
